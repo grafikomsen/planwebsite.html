@@ -5,28 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
-    
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
     <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
-    
+    <link rel="stylesheet" href="./output.css">
     <title>Plant Website || TailwindCSS </title>
 </head>
 
 <body>
     <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-    <header id="navbar">
-        <nav class="container">
+    <header class="bg-green-950 fixed left-0 top-0 w-full z-50" id="navbar">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
             <div>
-                <h1 class="text-2xl underline uppercase">PlanWebsite</h1>
+                <h1 class="sm:text-2xl font-Lobster">Plan Website</h1>
             </div>
-            <div>
-                <ul>
-                    <li><a href=""></a>Accueil</li>
-                    <li><a href="">A propos de</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+            <div class="absolute overflow-hidden top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300" id="Nav-menu">
+                <ul class="flex flex-col items-center justify-between gap-8">
+                    <li><a class="nav-link" href="#home">Accueil</a></li>
+                    <li><a class="nav-link" href="#about">A propos de</a></li>
+                    <li><a class="nav-link" href="#popular">Popular</a></li>
+                    <li><a class="nav-link" href="#reviews">Review</a></li>
                 </ul>
+
+                <div>
+                    <img class="w-32 absolute bottom-5 -right-10 opacity-90" src="/assets/img/leaf-1.png" alt="image_leaf">
+                </div>
+                <div>
+                    <img class="w-32 absolute top-5 -left-10 opacity-90" src="/assets/img/leaf-2.png" alt="image_leaf">
+                </div>
+            </div>
+            
+            <div class="text-2xl sm:text-3xl cursor-pointer z-50">
+                <i class="ri-menu-4-fill"></i>
             </div>
         </nav>
     </header>
@@ -78,6 +89,7 @@
     <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
 
     <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
+    <script src="main.js"></script>
     
 </body>
 
