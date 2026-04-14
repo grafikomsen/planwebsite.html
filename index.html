@@ -15,28 +15,28 @@
 
 <body>
     <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-    <header class="bg-green-950 fixed left-0 top-0 w-full z-50" id="navbar">
+    <header class="fixed top-0 left-0 z-50 w-full bg-green-950" id="navbar">
         <nav class="container flex items-center justify-between h-16 sm:h-20">
             <div>
-                <h1 class="sm:text-2xl font-Lobster">Plan Website</h1>
+                <h1 class="sm:text-2xl font-Lobster">Site Web du plan</h1>
             </div>
             <div class="absolute overflow-hidden top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm lg:static lg:min-h-fit lg:bg-transparent lg:w-auto flex items-center justify-center duration-300" id="Nav-menu">
-                <ul class="flex flex-col lg:flex-row items-center justify-between gap-8">
+                <ul class="flex flex-col items-center justify-between gap-8 lg:flex-row">
                     <li><a class="nav-link" href="#home">Accueil</a></li>
                     <li><a class="nav-link" href="#about">A propos de</a></li>
-                    <li><a class="nav-link" href="#popular">Popular</a></li>
-                    <li><a class="nav-link" href="#reviews">Review</a></li>
+                    <li><a class="nav-link" href="#popular">Populaire</a></li>
+                    <li><a class="nav-link" href="#reviews">Revoir</a></li>
                 </ul>
 
                 <div>
-                    <img class="w-32 absolute bottom-5 -right-10 opacity-90 lg:hidden" src="/assets/img/leaf-1.png" alt="image_leaf">
+                    <img class="absolute w-32 bottom-5 -right-10 opacity-90 lg:hidden" src="/assets/img/leaf-1.png" alt="image_leaf">
                 </div>
                 <div>
-                    <img class="w-32 absolute top-5 -left-10 opacity-90 lg:hidden" src="/assets/img/leaf-2.png" alt="image_leaf">
+                    <img class="absolute w-32 top-5 -left-10 opacity-90 lg:hidden" src="/assets/img/leaf-2.png" alt="image_leaf">
                 </div>
             </div>
             
-            <div class="text-2xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+            <div class="z-50 text-2xl cursor-pointer sm:text-3xl lg:hidden">
                 <i class="ri-menu-4-fill" id="hamburger"></i>
             </div>
         </nav>
@@ -45,7 +45,62 @@
     <main>
         <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
         <section id="home">
+            <div class="container flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
+                <div class="w-full space-y-3">
 
+                    <h1>
+                        Les <span class="text-yellow-500">plantes</span> ont un 
+                        <span class="text-yellow-500">impact</span> positif sur votre environnement
+                    </h1>
+                    
+                    <p class="text-md lg:text-lg">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Distinctio fugiat eveniet, reprehenderit veritatis aut explicabo 
+                        voluptatum ullam itaque tenetur numquam!
+                    </p>
+
+                    <div class="flex flex-col items-center gap-4 sm:flex-row">
+                        <a href="" class="btn">
+                            Achetez maintenant
+                            <i class="ri-leaf-line"></i>
+                        </a>
+
+                        <a href="" class="btn btn-outline">
+                            En savoir plus
+                            <i class="ri-leaf-line"></i>
+                        </a>
+                    </div>
+
+                    <h5 class="text-md lg:text-lg">Vous bénéficierez d'un essai gratuit de 30 jours.</h5>
+
+                    <div class="flex items-center gap-4">
+                        <a href="">
+                            <i class="text-xl ri-facebook-fill"></i>
+                        </a>
+                        <a href="">
+                            <i class="text-xl ri-twitter-x-line"></i>
+                        </a>
+                        <a href="">
+                            <i class="text-xl ri-instagram-line"></i>
+                        </a>
+                        <a href="">
+                            <i class="text-xl ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img class="w-[950px]" src="/assets/img/home.png" alt="">
+                    <div class="absolute top-0 left-0">
+                        <i class="text-5xl opacity-10 ri-leaf-line"></i>
+                    </div>
+                    <div class="absolute top-0 right-5">
+                        <i class="text-5xl opacity-10 ri-flower-line"></i>
+                    </div>
+                    <div class="absolute bottom-0 right-5">
+                        <i class="text-5xl opacity-10 ri-plant-line"></i>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--~~~~~~~~~~~~~~~ Services ~~~~~~~~~~~~~~~-->

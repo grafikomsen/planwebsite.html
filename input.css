@@ -4,13 +4,33 @@
 @tailwind utilities;
 
 body {
-    @apply bg-green-950 text-white font-Jost tracking-wider;
+    @apply tracking-wider text-white bg-green-950 font-Jost;
+}
+
+section {
+    @apply py-20 md:py-28;
+}
+
+h1 {
+    @apply text-3xl font-bold md:text-4xl xl:text-5xl;
 }
 
 .nav-link{
-    @apply text-lg lg:text-sm font-bold duration-300;
+    @apply text-lg duration-300;
 }
 
 .nav-link:hover {
     @apply text-yellow-500;
+}
+
+.btn {
+    @apply px-5 py-2 duration-300 bg-yellow-500 border border-yellow-500 rounded;
+}
+
+.btn:hover {
+   @apply opacity-80; 
+}
+
+.btn-outline {
+    @apply bg-transparent;
 }
