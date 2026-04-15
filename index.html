@@ -44,69 +44,111 @@
 
     <main>
         <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
-        <section id="home">
-            <div class="container flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
-                <div class="w-full space-y-3">
+        <section id="home" class="relative">
+            <div class="container">
+                <div class="absolute w-80 h-80 rounded-full bg-green-300 transform -translate-y-1/2 -translate-x-1/2 z-99 blur-3xl opacity-20 top-1/2 right-1"></div>
+                <div class="flex flex-col items-center gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
+                    <div class="w-full space-y-6 lg:w-1/2">
 
-                    <h1>
-                        Les <span class="text-yellow-500">plantes</span> ont un 
-                        <span class="text-yellow-500">impact</span> positif sur votre environnement
-                    </h1>
-                    
-                    <p class="text-md lg:text-lg">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Distinctio fugiat eveniet, reprehenderit veritatis aut explicabo 
-                        voluptatum ullam itaque tenetur numquam!
-                    </p>
+                        <h1>
+                            Les <span class="text-yellow-500">plantes</span> ont un 
+                            <span class="text-yellow-500">impact</span> positif sur votre environnement
+                        </h1>
+                        
+                        <p class="text-md lg:text-lg">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Distinctio fugiat eveniet, reprehenderit veritatis aut explicabo 
+                            voluptatum ullam itaque tenetur numquam!
+                        </p>
 
-                    <div class="flex flex-col items-center gap-4 sm:flex-row">
-                        <a href="" class="btn">
-                            Achetez maintenant
-                            <i class="ri-leaf-line"></i>
-                        </a>
+                        <div class="flex flex-col items-center gap-4 sm:flex-row">
+                            <a href="" class="btn">
+                                Achetez maintenant
+                                <i class="ri-leaf-line"></i>
+                            </a>
 
-                        <a href="" class="btn btn-outline">
-                            En savoir plus
-                            <i class="ri-leaf-line"></i>
-                        </a>
+                            <a href="" class="btn btn-outline">
+                                En savoir plus
+                                <i class="ri-leaf-line"></i>
+                            </a>
+                        </div>
+
+                        <h5 class="text-md lg:text-lg">Vous bénéficierez d'un essai gratuit de 30 jours.</h5>
+
+                        <div class="flex items-center gap-4">
+                            <a href="">
+                                <i class="text-xl hover:text-yellow-500 ri-facebook-fill"></i>
+                            </a>
+                            <a href="">
+                                <i class="text-xl hover:text-yellow-500 ri-twitter-x-line"></i>
+                            </a>
+                            <a href="">
+                                <i class="text-xl hover:text-yellow-500 ri-instagram-line"></i>
+                            </a>
+                            <a href="">
+                                <i class="text-xl hover:text-yellow-500 ri-linkedin-fill"></i>
+                            </a>
+                        </div>
                     </div>
-
-                    <h5 class="text-md lg:text-lg">Vous bénéficierez d'un essai gratuit de 30 jours.</h5>
-
-                    <div class="flex items-center gap-4">
-                        <a href="">
-                            <i class="text-xl ri-facebook-fill"></i>
-                        </a>
-                        <a href="">
-                            <i class="text-xl ri-twitter-x-line"></i>
-                        </a>
-                        <a href="">
-                            <i class="text-xl ri-instagram-line"></i>
-                        </a>
-                        <a href="">
-                            <i class="text-xl ri-linkedin-fill"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="relative">
-                    <img class="w-[950px]" src="/assets/img/home.png" alt="">
-                    <div class="absolute top-0 left-0">
-                        <i class="text-5xl opacity-10 ri-leaf-line"></i>
-                    </div>
-                    <div class="absolute top-0 right-5">
-                        <i class="text-5xl opacity-10 ri-flower-line"></i>
-                    </div>
-                    <div class="absolute bottom-0 right-5">
-                        <i class="text-5xl opacity-10 ri-plant-line"></i>
+                    <div class="relative lg:w-1/2">
+                        <img class="w-[900px]" src="/assets/img/home.png" alt="">
+                        <div class="absolute top-0 left-0 animate-movingY">
+                            <i class="text-5xl text-yellow-500 duration-300 opacity-20 ri-leaf-line"></i>
+                        </div>
+                        <div class="absolute top-0 right-5 animate-rotating">
+                            <i class="text-5xl text-yellow-500 duration-300 opacity-20 ri-flower-line"></i>
+                        </div>
+                        <div class="absolute bottom-4 right-5 animate-scalingUp">
+                            <i class="text-5xl text-yellow-500 duration-300 opacity-20 ri-plant-line"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!--~~~~~~~~~~~~~~~ Services ~~~~~~~~~~~~~~~-->
-        <div>
-
-        </div>
+        <section class="bg-white text-green-950" id="services">
+            <div class="container">
+                <div class="flex flex-col gap-3 lg:flex-row lg:gap-5">
+                    <div class="w-full border border-green-950 rounded p-4">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-truck-line text-4xl"></i>
+                            <h5 class="text-lg lg:text-xl font-bold">Fast <br> Delivery</h5>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, facere debitis omnis
+                        </p>
+                    </div>
+                    <div class="w-full border border-green-950 rounded p-4">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-customer-service-line text-4xl"></i>
+                            <h5 class="text-lg lg:text-xl font-bold">Great Customer <br>Service</h5>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, facere debitis omnis
+                        </p>
+                    </div>
+                    <div class="w-full border border-green-950 rounded p-4">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-plant-line text-4xl"></i>
+                            <h5 class="text-lg lg:text-xl font-bold">Original <br>Plants</h5>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, facere debitis omnis
+                        </p>
+                    </div>
+                    <div class="w-full border border-green-950 rounded p-4">
+                        <div class="flex items-center gap-5">
+                            <i class="ri-money-dollar-circle-line text-4xl"></i>
+                            <h5 class="text-lg lg:text-xl font-bold">Affordable <br> Price</h5>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, facere debitis omnis
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--~~~~~~~~~~~~~~~ About us ~~~~~~~~~~~~~~~-->
         <section id="about">
